@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+
+<head>
+  <title>Velofili</title>
+  <meta charset="utf-8">
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+
+</head>
+
+<body>
+	<div id="main" class="parallax">
+		<div id="header">
+			<div id="logo">
+				<div id="logo_text">
+					<h1><a href="index.html">Велофили</a></h1>
+					<h2>Прокат спортивного инвентаря в парках Москвы</h2>
+				</div>
+			</div>
+		</div>
+		<div class="tab">
+			<!-- todo: make a toogle menu -->
+			<button class="tablink" onclick="openPage(event, 'price')">Стоимость</button>
+			<button class="tablink" onclick="openPage(event, 'locations')">Пункты проката</button>
+			<button class="tablink" onclick="openPage(event, 'home')" id="defaultOpen">Главная</button>
+			<!-- <button class="tablink" onclick="openPage(event, 'contacts')">Контакты</button> -->
+		</div>
+		<div id="page_content">
+			<!-- Home tab -->
+			<div id="home" class="tabcontent">
+				<h1>Добро пожаловать!</h1>
+				<p>Лучший отдых на свежем воздухе - это активный отдых. Поэтому мы приглашаем всех желающих взять у нас в прокат велосипед или ролики и насладиться
+        природой московских парков. Для любителей неспешной езды у нас есть велосипеды-круизеры, для тех, кто любит разогнаться и попрыгать на кочках -
+        скоростные MTB велосипеды. Если вы собрались отдохнуть семьёй - к вашим услугам велосипеды-тандемы с дополнительной возможностью взять детское кресло.
+        также в наших пунктах проката можно взять роликовые коньки, детские электромобили, сегвеи и много чего ещё. Интересующиеся могут заглянуть в раздел "стоимость"
+        этого сайта.</p>
+        <p></p>
+				<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+				<h2>Заголовок</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<ul>
+					<li>Lorem</li>
+					<li>Lorem lorem</li>
+					<li>Lorem lorem lorem</li>
+				</ul> -->
+				<!-- Carousel -->
+				<div class="slideshow-container">
+					<div class="ShowSlides fade">
+						<div class="slides-numbertext">1 / 3</div>
+						<img src="style/slide_1.jpg" style="width:100%;">
+						<div class="text">Caption One</div>
+					</div>
+					<div class="ShowSlides fade">
+						<div class="slides-numbertext">2 / 3</div>
+						<img src="style/slide_1.jpg" style="width:100%">
+						<div class="text">Caption Two</div>
+					</div>
+
+					<div class="ShowSlides fade">
+						<div class="slides-numbertext">3 / 3</div>
+						<img src="style/slide_1.jpg" style="width:100%">
+						<div class="text">Caption Three</div>
+					</div>
+
+					<a class="slides-prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="slides-next" onclick="plusSlides(1)">&#10095;</a>
+				</div><br>
+				<div style="text-align:center">
+					<span class="slides-dot" onclick="currentSlide(1)"></span>
+					<span class="slides-dot" onclick="currentSlide(2)"></span>
+					<span class="slides-dot" onclick="currentSlide(3)"></span>
+				</div>
+			</div>
+
+			<!-- Locations tab -->
+			<div id="locations" class="tabcontent">
+				<h1>Где нас найти</h1>
+				<p>Наши пункты проката расположены в трёх парках москвы: Филёвском, Таганском и в Парке Олимпийской Деревни. В точках проката вы можете подобрать себе
+        велосипед, роликовые коньки, детские электромобили и другие виды спортивного оборудования. Подробнее ознакомиться со списком можно в разделе "стоимость".</p>
+				<p>Работники пунктов проката помогут вам подобрать себе подходящий инвентарь, расскажут об особеннностях использования и посоветуют самые интересные места
+        для катания.</p>
+
+				<!-- Locations -->
+				<!-- Location 1 -->
+				<div class="row">
+					<div class="loc-column">
+						<div class="loc-thumb">
+							<img src="style/fili.png" alt="Location 1">
+							<div class="loc-des">
+								<p><b>Филёвский парк</b></p>
+								<!-- <p>Praesent tincidunt sed tellus.</p> -->
+								<!-- Trigger The Loc1_Modal -->
+								<button class="btn_loc" id="btn_loc1" onclick="document.getElementById('Loc1_Modal').style.display='block'">Посмотреть на карте</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- Location 3 -->
+					<div class="loc-column">
+						<div class="loc-thumb">
+							<img src="style/fili.png" alt="Location 3">
+							<div class="loc-des">
+								<p><b>Таганский парк</b></p>
+								<!-- <p>Praesent tincidunt sed tellus.</p> -->
+								<!-- Trigger The Loc3_Modal -->
+								<button class="btn_loc" id="btn_loc3" onclick="document.getElementById('Loc3_Modal').style.display='block'">Посмотреть на карте</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- Location 4 -->
+					<div class="loc-column">
+						<div class="loc-thumb">
+							<img src="style/fili.png" alt="Location 4">
+							<div class="loc-des">
+								<p><b>Парк Олимпийской деревни</b></p>
+								<!-- <p>Praesent tincidunt sed tellus.</p> -->
+								<!-- Trigger The Loc4_Modal -->
+								<button class="btn_loc" id="btn_loc4" onclick="document.getElementById('Loc4_Modal').style.display='block'">Посмотреть на карте</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Modal Content -->
+				<!-- Location 1 Modal -->
+				<div id="Loc1_Modal" class="loc-modal">
+					<div class="loc-modal-content">
+						<div class="loc-modal-header">
+							<span onclick="document.getElementById('Loc1_Modal').style.display='none'" class="modal-close button">×</span>
+							<h2>Филевский парк</h2>
+						</div>
+						<div class="loc-modal-body">
+							<div class="modal-map" id="loc_map_1">
+								<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9931205e5c08c72e5ecc71859b52611329f543462b021b51828fab56615e99f0&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+							</div>
+							<div class="mini-modal-map">
+								<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9931205e5c08c72e5ecc71859b52611329f543462b021b51828fab56615e99f0&amp;width=100%25&amp;height=331&amp;lang=ru_RU&amp;scroll=true"></script>
+							</div>
+							<div class="loc-info">
+								<p>1. Барклая, 22</p>
+								<p>2. Большая Филевская</p>
+								<p>3. парк Фили</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Location 3 Modal -->
+				<div id="Loc3_Modal" class="loc-modal">
+					<div class="loc-modal-content">
+						<div class="loc-modal-header">
+							<span onclick="document.getElementById('Loc3_Modal').style.display='none'" class="modal-close button">×</span>
+							<h2>Таганский парк</h2>
+						</div>
+						<div class="loc-modal-body">
+							<div id="loc_map_3" class="modal-map">
+								<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1c4f64cd3cfe29fb773b5159323d42049c8626e3ba43988c9d92d3df72344c1f&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+							</div>
+							<div class="mini-modal-map">
+								<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1c4f64cd3cfe29fb773b5159323d42049c8626e3ba43988c9d92d3df72344c1f&amp;width=100%25&amp;height=331&amp;lang=ru_RU&amp;scroll=true"></script>
+							</div>
+							<div class="loc-info">
+								<p>Адрес</p>
+								<p>Режим работы</p>
+								<p>Контакты</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Location 4 Modal -->
+				<div id="Loc4_Modal" class="loc-modal">
+					<div class="loc-modal-content">
+						<div class="loc-modal-header">
+							<span onclick="document.getElementById('Loc4_Modal').style.display='none'" class="modal-close button">×</span>
+							<h2>Парк Олимпийской деревни</h2>
+						</div>
+						<div class="loc-modal-body">
+							<div id="loc_map_4" class="modal-map">
+								<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1aaf94ab258d10425702b25117f05a2ed1d2127d7656bc4ed883f23d323f7b34&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+							</div>
+							<div class="mini-modal-map">
+								<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1aaf94ab258d10425702b25117f05a2ed1d2127d7656bc4ed883f23d323f7b34&amp;width=100%25&amp;height=331&amp;lang=ru_RU&amp;scroll=true"></script>
+							</div>
+							<div class="loc-info">
+								<p>Адрес</p>
+								<p>Режим работы</p>
+								<p>Контакты</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Price tab -->
+			<div id="price" class="tabcontent">
+				<img src="style/preiskurant.png" alt="Прейскурант" style="width: 100%; margin: auto;">
+			</div>
+			<!-- Contacts -->
+			<!-- <div id="contacts" class="tabcontent">
+				<h2>Контакты</h2>
+				<p>Кроме контактной инфы, здесь можно поместить и форму обратной связи – такую, как <a href="http://velofili.ru/contacts.html" target="_blank">здесь</a><p/>
+			</div> -->
+
+			<div id="content_footer"></div>
+			<div id="footer">
+				<div class="row">
+				<h3>Контакты</h3>
+				<p>Москва, ХХХХХ ХХХ</p>
+				<p>тел: ХХХХХХ</p>
+				<p>хххх@ххх</p>
+				</div>
+			</div>
+		</div>
+		<!-- scripts -->
+		<script src="js/open_tabs.js"></script>
+		<script src="js/carousel.js"></script>
+		<script src="js/location_modals.js"></script>
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	</div>
+</body>
+</html>
