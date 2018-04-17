@@ -46,7 +46,7 @@ ul {
 
 ul li {
   list-style-type: none;
-  background: url(bullet.png) no-repeat;
+  background: url("bullet.png") no-repeat;
   margin: 0 0 6px 0; 
   padding: 0 0 4px 25px;
   line-height: 1.5em;
@@ -89,7 +89,7 @@ a:hover
 
 #logo {
   background-color: #D3D3D3;
-  /* background: url(logo.jpg) no-repeat; */
+  /* background: url("logo.jpg") no-repeat; */
   height: 180px;
   position: relative;
   width: 100%;
@@ -105,12 +105,13 @@ a:hover
 
 #logo_text h1, 
 #logo_text h1 a,
-#logo_text h1 a:hover  {
+#logo_text h1 a:hover {
   color: #FFF;
   letter-spacing: 0.1em;
   padding: 60px 0 0 0;
   text-decoration: none;
-  text-align: center;}
+  text-align: center;
+}
 
 #logo_text h2 {
   color: #444;
@@ -153,7 +154,8 @@ a:hover
 }
 
 /* Next & previous buttons */
-.slides-prev, .slides-next {
+.slides-prev, 
+.slides-next {
   border-radius: 0 3px 3px 0;
   color: white;
   cursor: pointer;
@@ -234,12 +236,10 @@ a:hover
   to {opacity: 1}
 }
 
-/* Location  modals*/
+/* Location modals*/
 .loc-column {
   float: left;
-  padding: 0 12px;
-  padding-left: 0;
-  padding-top: 16px;
+  padding: 16px 12px 0 0;
   width: 50%;
 }
 .loc-column:last-child {
@@ -248,7 +248,7 @@ a:hover
   width: 50%;
 }
 
-.loc-column  img{
+.loc-column img{
   width: 100%;
 }
 
@@ -524,7 +524,7 @@ a:hover
   }
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 800px) {
   .tab {
     width: 100%;
   }
