@@ -13,7 +13,7 @@ img {
 
 .parallax {
   background-attachment: fixed;
-  background-image: url("content_2.jpg");
+  background-image: url("fon.jpg");
   /* height: 500px; */
   background-position: center;
   background-repeat: no-repeat;
@@ -91,7 +91,7 @@ a:hover {
 }
 
 #logo {
-  background-color: rgba(139, 10, 80, 0.6);
+  background-color: rgba(0, 102, 51, 0.6);
   height: 180px;
   position: relative;
   width: 100%;
@@ -108,7 +108,7 @@ a:hover {
 #logo_text h1,
 #logo_text h1 a,
 #logo_text h1 a:hover {
-  color: #FFF; 
+  color: #FFF;
   letter-spacing: 0.1em;
   padding: 60px 0 0 0;
   text-decoration: none;
@@ -456,7 +456,7 @@ a:hover {
   #page_content,
   #header,
   #footer {width: 100%;}
-  #logo {background: url("content_2.jpg");}
+  #logo {background: url("fon.jpg");}
   #logo_text h2 {color: #B0B0B0;}
 }
 
